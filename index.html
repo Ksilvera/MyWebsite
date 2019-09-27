@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>My website</title>
+  <meta charset="utf-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--bootstrap stuff-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script async src="js/main.js"></script>
+
+  <!--main css stuff -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <div class = "d-flex" id = "wrapper">
+
+    <div class = "bg-light  border-right" id = "sidebar-wrapper">
+      <div class = "sidebar-heading">Kevin Silvera</div>
+      <div class = "list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">About</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Resume</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Projects</a>
+      </div>
+    </div>
+
+    <div id = "page-content-wrapper">
+      <nav class = "navbar navbar-expand-lg navbar-dark darken-2 border-bottom">
+        <button class = "btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+
+      </nav>
+
+      <div class = "container-fluid">
+        <section class="profile_area">
+          <div class = "container">
+            <div class = "profile_inside p_120">
+              <div class = "row">
+                <div class = "col-lg-5">
+                  <img src= "images/personal.jpg" class="img-fluid" alt = "">
+                </div>
+                <div class = "col-lg-7">
+                  <div class = text>
+                    <h6>Hello, I am</h6>
+                    <h3>Kevin Silvera</h3>
+                    <h4>Junior Software Engineer</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class = "resume_area">
+          <div class = "inner">
+            <p>RESUME</p>
+            <p class = "section-header" style ="text=align:left;">Education</p>
+            <p>
+              <a href="#mason">
+                <img class = "icon" src = "images/GeorgeMason.png">
+              </a>
+              <b>George Mason University</b>
+              <span class = "date">
+                <i>Aug 2014 - May 2019</i>
+              </span>
+              <br>
+              <b>Computer Science B.S.</b>
+              <br>
+              <br>
+              "Relevant Coursework:"
+              <br>
+            </p>
+            <ul style="list-style:circle">
+              <li>Analysis of Algorithms</li>
+            </ul>
+            <span class = "skills">C</span>
+            <span class = "skills">Java</span>
+            <span class = "skills">Python</span>
+            <span class = "skills">Git</span>
+
+
+          </div>
+        </section>
+
+        <section class ="project_area">
+          <div class="inner">
+            <p class = "header">Projects</p>
+            <!--Remember each row can hold two thumbnails before needing another row -->
+            <div class = "row">
+              <div class = "projects-thumb">
+                <a class = "image-popup" href="#findpic">
+                  <img src="">
+                </a>
+                <p class = "description">
+                <b>Title of project</b>
+                "This is a project that I did"
+                <span class = "skills">C</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class ="footer">
+          <div class="inner">
+            <p>Kevin Silvera 2019</p>
+            <span class = "right">
+              <a href ="#mail">Email</a>
+              <a href="#linkedin">Linkedin</a>
+              <a href="#github">Github</a>
+            </span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
+</body>
+</html>
